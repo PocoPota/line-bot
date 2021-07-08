@@ -5,7 +5,7 @@ var url = "https://api.line.me/v2/bot/message/reply"
 //LINEからのイベントがdoPostにとんでくる
 function doPost(e) {
   //とんできた情報を扱いやすいように変換している
-  var json = e.postData.contents
+  var json = e.postData.contents;
   var events = JSON.parse(json).events;
 
   // ランダム
